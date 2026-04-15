@@ -1,0 +1,10 @@
+c:\Users\Client\Documents\document-summarizer\src\main\java\com\documentsummarizer\service\SummarizationService.java
+c:\Users\Client\Documents\document-summarizer\src\main\java\com\documentsummarizer\DocumentSummarizerApplication.java
+c:\Users\Client\Documents\document-summarizer\src\main\java\com\documentsummarizer\service\TextParserService.java
+c:\Users\Client\Documents\document-summarizer\src\main\java\com\documentsummarizer\controller\SummaryController.java
+c:\Users\Client\Documents\document-summarizer\src\main\java\com\documentsummarizer\dto\ErrorResponse.java
+c:\Users\Client\Documents\document-summarizer\src\main\java\com\documentsummarizer\service\SummarizationServiceImpl.java
+c:\Users\Client\Documents\document-summarizer\src\main\java\com\documentsummarizer\dto\SummaryRequest.java
+c:\Users\Client\Documents\document-summarizer\src\main\java\com\documentsummarizer\exception\GlobalExceptionHandler.java
+c:\Users\Client\Documents\document-summarizer\src\main\java\com\documentsummarizer\dto\SummaryResponse.java
+c:\Users\Client\Documents\document-summarizer\src\main\java\com\documentsummarizer\client\MockAiClient.java

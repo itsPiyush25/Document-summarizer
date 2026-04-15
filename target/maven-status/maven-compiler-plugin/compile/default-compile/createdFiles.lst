@@ -1,0 +1,12 @@
+com\documentsummarizer\service\SummarizationService.class
+com\documentsummarizer\controller\SummaryController.class
+com\documentsummarizer\service\SummarizationServiceImpl.class
+com\documentsummarizer\dto\SummaryRequest.class
+com\documentsummarizer\exception\GlobalExceptionHandler.class
+com\documentsummarizer\dto\SummaryRequest$SummaryType.class
+com\documentsummarizer\client\MockAiClient$1.class
+com\documentsummarizer\dto\SummaryResponse.class
+com\documentsummarizer\service\TextParserService.class
+com\documentsummarizer\client\MockAiClient.class
+com\documentsummarizer\DocumentSummarizerApplication.class
+com\documentsummarizer\dto\ErrorResponse.class

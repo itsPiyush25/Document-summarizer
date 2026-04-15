@@ -1,0 +1,4 @@
+com\documentsummarizer\controller\SummaryControllerTest.class
+com\documentsummarizer\client\MockAiClientTest.class
+com\documentsummarizer\controller\SummaryControllerIntegrationTest.class
+com\documentsummarizer\service\SummarizationServiceImplTest.class
