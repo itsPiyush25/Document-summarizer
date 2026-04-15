@@ -294,7 +294,7 @@ public class SecurityService {
 FROM openjdk:17-jdk-slim
 WORKDIR /app
 COPY target/document-summarizer-*.jar app.jar
-EXPOSE 8080
+EXPOSE 9090
 ENTRYPOINT ["java", "-jar", "app.jar"]
 ```
 

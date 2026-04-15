@@ -31,7 +31,7 @@ This document captures the conversation history and decision-making process for 
   - OkHttp for future HTTP client needs
   - Apache Tika for file parsing (future)
 - Created main application class `DocumentSummarizerApplication.java`
-- Configured `application.properties` with server port 8080
+- Configured `application.properties` with server port 9090
 
 #### **Phase 2: Core API Development**
 - Created DTOs:

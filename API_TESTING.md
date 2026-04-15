@@ -5,7 +5,7 @@ This document provides examples for testing the Document Summarizer API using cu
 ## API Endpoint
 
 ```
-POST http://localhost:8080/api/v1/summarize
+POST http://localhost:9090/api/v1/summarize
 Content-Type: application/json
 ```
 
@@ -14,7 +14,7 @@ Content-Type: application/json
 ### 1. Short Summary Request
 
 ```bash
-curl -X POST http://localhost:8080/api/v1/summarize \
+curl -X POST http://localhost:9090/api/v1/summarize \
   -H "Content-Type: application/json" \
   -d '{
     "text": "Artificial intelligence is transforming many industries by automating tasks and providing insights from data. Machine learning algorithms can analyze patterns and make predictions that were previously impossible. This technology is being applied in healthcare, finance, education, and many other sectors.",
@@ -26,7 +26,7 @@ curl -X POST http://localhost:8080/api/v1/summarize \
 ### 2. Bullet Summary Request
 
 ```bash
-curl -X POST http://localhost:8080/api/v1/summarize \
+curl -X POST http://localhost:9090/api/v1/summarize \
   -H "Content-Type: application/json" \
   -d '{
     "text": "Spring Boot makes it easy to create stand-alone, production-grade Spring based Applications. Key features include embedded servers, auto-configuration, production-ready features, and no code generation. It simplifies the development process and reduces boilerplate code.",
@@ -38,7 +38,7 @@ curl -X POST http://localhost:8080/api/v1/summarize \
 ### 3. Detailed Summary Request
 
 ```bash
-curl -X POST http://localhost:8080/api/v1/summarize \
+curl -X POST http://localhost:9090/api/v1/summarize \
   -H "Content-Type: application/json" \
   -d '{
     "text": "Climate change refers to long-term shifts in temperatures and weather patterns. These shifts may be natural, but since the 1800s, human activities have been the main driver of climate change, primarily due to the burning of fossil fuels like coal, oil and gas. Burning fossil fuels generates greenhouse gas emissions that act like a blanket wrapped around the Earth, trapping the sun'\''s heat and raising temperatures.",
@@ -50,7 +50,7 @@ curl -X POST http://localhost:8080/api/v1/summarize \
 ### 4. Validation Error (Empty Text)
 
 ```bash
-curl -X POST http://localhost:8080/api/v1/summarize \
+curl -X POST http://localhost:9090/api/v1/summarize \
   -H "Content-Type: application/json" \
   -d '{
     "text": "",
@@ -62,7 +62,7 @@ curl -X POST http://localhost:8080/api/v1/summarize \
 ### 5. Validation Error (Missing Summary Type)
 
 ```bash
-curl -X POST http://localhost:8080/api/v1/summarize \
+curl -X POST http://localhost:9090/api/v1/summarize \
   -H "Content-Type: application/json" \
   -d '{
     "text": "Sample text for testing",
@@ -73,7 +73,7 @@ curl -X POST http://localhost:8080/api/v1/summarize \
 ### 6. Text Too Short (Minimum 10 characters)
 
 ```bash
-curl -X POST http://localhost:8080/api/v1/summarize \
+curl -X POST http://localhost:9090/api/v1/summarize \
   -H "Content-Type: application/json" \
   -d '{
     "text": "Short",
@@ -144,10 +144,10 @@ You can import the following JSON into Postman:
           "raw": "{\n  \"text\": \"Artificial intelligence is transforming many industries by automating tasks and providing insights from data. Machine learning algorithms can analyze patterns and make predictions that were previously impossible. This technology is being applied in healthcare, finance, education, and many other sectors.\",\n  \"summaryType\": \"SHORT\",\n  \"maxLength\": 150\n}"
         },
         "url": {
-          "raw": "http://localhost:8080/api/v1/summarize",
+          "raw": "http://localhost:9090/api/v1/summarize",
           "protocol": "http",
           "host": ["localhost"],
-          "port": "8080",
+          "port": "9090",
           "path": ["api", "v1", "summarize"]
         }
       }
@@ -167,10 +167,10 @@ You can import the following JSON into Postman:
           "raw": "{\n  \"text\": \"Spring Boot makes it easy to create stand-alone, production-grade Spring based Applications. Key features include embedded servers, auto-configuration, production-ready features, and no code generation. It simplifies the development process and reduces boilerplate code.\",\n  \"summaryType\": \"BULLET\",\n  \"maxLength\": 300\n}"
         },
         "url": {
-          "raw": "http://localhost:8080/api/v1/summarize",
+          "raw": "http://localhost:9090/api/v1/summarize",
           "protocol": "http",
           "host": ["localhost"],
-          "port": "8080",
+          "port": "9090",
           "path": ["api", "v1", "summarize"]
         }
       }
@@ -190,10 +190,10 @@ You can import the following JSON into Postman:
           "raw": "{\n  \"text\": \"Climate change refers to long-term shifts in temperatures and weather patterns. These shifts may be natural, but since the 1800s, human activities have been the main driver of climate change, primarily due to the burning of fossil fuels like coal, oil and gas. Burning fossil fuels generates greenhouse gas emissions that act like a blanket wrapped around the Earth, trapping the sun's heat and raising temperatures.\",\n  \"summaryType\": \"DETAILED\",\n  \"maxLength\": 500\n}"
         },
         "url": {
-          "raw": "http://localhost:8080/api/v1/summarize",
+          "raw": "http://localhost:9090/api/v1/summarize",
           "protocol": "http",
           "host": ["localhost"],
-          "port": "8080",
+          "port": "9090",
           "path": ["api", "v1", "summarize"]
         }
       }
@@ -213,10 +213,10 @@ You can import the following JSON into Postman:
           "raw": "{\n  \"text\": \"\",\n  \"summaryType\": \"SHORT\",\n  \"maxLength\": 100\n}"
         },
         "url": {
-          "raw": "http://localhost:8080/api/v1/summarize",
+          "raw": "http://localhost:9090/api/v1/summarize",
           "protocol": "http",
           "host": ["localhost"],
-          "port": "8080",
+          "port": "9090",
           "path": ["api", "v1", "summarize"]
         }
       }
@@ -236,10 +236,10 @@ You can import the following JSON into Postman:
           "raw": "{\n  \"text\": \"Sample text for testing\",\n  \"maxLength\": 100\n}"
         },
         "url": {
-          "raw": "http://localhost:8080/api/v1/summarize",
+          "raw": "http://localhost:9090/api/v1/summarize",
           "protocol": "http",
           "host": ["localhost"],
-          "port": "8080",
+          "port": "9090",
           "path": ["api", "v1", "summarize"]
         }
       }
@@ -263,7 +263,7 @@ $body = @{
     maxLength = 150
 } | ConvertTo-Json
 
-Invoke-RestMethod -Uri "http://localhost:8080/api/v1/summarize" -Method Post -Headers $headers -Body $body
+Invoke-RestMethod -Uri "http://localhost:9090/api/v1/summarize" -Method Post -Headers $headers -Body $body
 ```
 
 ## Testing Notes

@@ -290,7 +290,7 @@ src/main/java/com/documentsummarizer/
    ```
 
 3. **Application Properties**:
-   - Server runs on port 8080
+   - Server runs on port 9090
    - Spring Boot 3.2.5
    - Auto-configured with Spring Web, Validation, Jackson
 
